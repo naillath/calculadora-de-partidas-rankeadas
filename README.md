@@ -1,26 +1,30 @@
-# 2️⃣ Calculadora de partidas Rankeadas
-**O Que deve ser utilizado**
+# 2️⃣ Calculadora de Partidas Ranqueadas
+
+## Objetivo
+
+O objetivo deste projeto é criar uma função em JavaScript que calcule o nível de um jogador em partidas ranqueadas com base em sua quantidade de vitórias e derrotas. O resultado deve ser armazenado em uma variável que representa o saldo de partidas ranqueadas (vitórias - derrotas).
+
+## Recursos Utilizados
 
 - Variáveis
 - Operadores
-- Laços de repetição
-- Estruturas de decisões
+- Estruturas de Decisão
 - Funções
 
-## Objetivo:
+## Como Funciona
 
-Crie uma função que recebe como parâmetro a quantidade de vitórias e derrotas de um jogador,
-depois disso retorne o resultado para uma variável, o saldo de Rankeadas deve ser feito através do calculo (vitórias - derrotas)
+A função criada recebe como parâmetro a quantidade de vitórias e derrotas de um jogador e calcula o saldo de partidas ranqueadas com base na fórmula (vitórias - derrotas). Em seguida, determina o nível do jogador de acordo com a seguinte tabela:
 
-Se vitórias for menor do que 10 = Ferro
-Se vitórias for entre 11 e 20 = Bronze
-Se vitórias for entre 21 e 50 = Prata
-Se vitórias for entre 51 e 80 = Ouro
-Se vitórias for entre 81 e 90 = Diamante
-Se vitórias for entre 91 e 100= Lendário
-Se vitórias for maior ou igual a 101 = Imortal
+- Se o número de vitórias for menor ou igual a 10, o jogador é classificado como "Ferro".
+- Se o número de vitórias estiver entre 11 e 20, o jogador é classificado como "Bronze".
+- Se o número de vitórias estiver entre 21 e 50, o jogador é classificado como "Prata".
+- Se o número de vitórias estiver entre 51 e 80, o jogador é classificado como "Ouro".
+- Se o número de vitórias estiver entre 81 e 90, o jogador é classificado como "Diamante".
+- Se o número de vitórias estiver entre 91 e 100, o jogador é classificado como "Lendário".
+- Se o número de vitórias for maior ou igual a 101, o jogador é classificado como "Imortal".
 
 ## Saída
 
-Ao final deve se exibir uma mensagem:
-"O Herói tem de saldo de **{saldoVitorias}** está no nível de **{nivel}**"
+Ao final do cálculo, a função retorna o saldo de vitórias e o nível do jogador. A mensagem de saída é exibida no seguinte formato:
+
+"O Herói {nomeDoJogador} tem um saldo de {saldoVitorias} vitórias e está no RANK de {nivel} na filas ranqueadas!"
